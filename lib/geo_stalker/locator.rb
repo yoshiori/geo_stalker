@@ -2,6 +2,7 @@ require "forwardable"
 
 require "geo_stalker/locator/base"
 require "geo_stalker/locator/darwin"
+require "geo_stalker/locator/linux"
 
 module GeoStalker
   class Locator
