@@ -26,11 +26,26 @@ https://developers.google.com/maps/documentation/geolocation/get-api-key
 
 ### location
 
+Ruby code
+
 ```ruby
 require "geo_stalker"
 
-stalker = GeoStalker::Locator.new(ENV["GOOGLE_API_KEY"])
-p stalker.location # {"location"=>{"lat"=>29.4222384, "lng"=>-98.4830782}, "accuracy"=>48.0}
+stalker = GeoStalker::Locator.new(your_key)
+stalker.location # {"location"=>{"lat"=>29.4222384, "lng"=>-98.4830782}, "accuracy"=>48.0}
+```
+
+Command line
+
+```sh
+GOOGLE_API_KEY=your_key geo_stalker | jq
+{
+  "location": {
+    "lat": 29.4221035,
+    "lng": -98.48321059999999
+  },
+  "accuracy": 37
+}
 ```
 
 ## Development
