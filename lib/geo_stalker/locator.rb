@@ -1,3 +1,5 @@
+require "forwardable"
+
 require "geo_stalker/locator/base"
 require "geo_stalker/locator/darwin"
 
