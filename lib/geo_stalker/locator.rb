@@ -17,6 +17,8 @@ module GeoStalker
         case RUBY_PLATFORM
         when /darwin/
           GeoStalker::Locator::Darwin.new(@api_key)
+        when /linux/
+          GeoStalker::Locator::Linux.new(@api_key)
         end
       end
     end
