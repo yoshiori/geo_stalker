@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
-
 require "geo_stalker"
+
+puts GeoStalker::Locator.new(ENV["GOOGLE_API_KEY"]).location.to_json

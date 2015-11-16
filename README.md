@@ -29,7 +29,7 @@ https://developers.google.com/maps/documentation/geolocation/get-api-key
 ```ruby
 require "geo_stalker"
 
-stalker = GeoStalker.new(your_key)
+stalker = GeoStalker::Locator.new(ENV["GOOGLE_API_KEY"])
 p stalker.location # {"location"=>{"lat"=>29.4222384, "lng"=>-98.4830782}, "accuracy"=>48.0}
 ```
 
